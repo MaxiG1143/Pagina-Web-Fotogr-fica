@@ -1,0 +1,782 @@
+
+body.bg {
+    width: 100%;
+    height: auto;
+    margin: 0;     
+    background-image:url("../assets/img/bg.png");
+    background-color: #000000;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+body.fondo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;     
+    background-color: #000000;
+}
+
+
+li > a.nav-link:hover {
+    color: #fe4c00;
+}
+a.btn:hover {
+    background-color: #ffffff;
+    color: #fc6d00;
+}
+.logo img {
+    position:absolute;
+    width: 70px;
+    height: auto;
+    right: 30px;
+    border-radius: 50%;
+    margin: 0px;
+}
+.fotografia {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+    font-weight: 600;
+    font-style: inherit;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    left: calc(20px + 50px + 10px); /* ajusta el 10px inicial si el logo está más a la izquierda */
+    top: 5px;
+    text-align: left;
+    display: flex;
+    align-items:flex-start;
+    gap: 9px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+.fotografia span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+    font-weight: 600;
+    width: 90px;
+    color: #fc6d00; /* Color para "LA" */
+}
+.nav-links {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content:center;
+    padding: 30px;
+    margin-left: 30%;
+    position: relative;
+    list-style: none;
+}
+
+.nav-links::after{
+    content: "";
+    /* Hacer que la barra ocupe todo el ancho de la página */
+    position: absolute;
+    left: -60%;
+    right: 0;
+    top: 100%;
+    height: 4px;
+    background: #fc6d00;
+    pointer-events: none;
+    display: block;
+    border-radius: 0;
+}
+.nav-link {
+    font-family: 'Montserrat', 'Poppins', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.3em;
+    font-style: inherit;
+    transition: color 0.3s ease;
+    margin-right: 60px;
+}
+.herosection {
+    padding: 30px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    display: inline-block;
+    align-items:flex-start;
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    display: ruby-text;
+    background-color: #fc6d00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 12px;
+    margin: 10px 0px 0px 20px;
+    border-radius: 10px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: 10px;
+    padding: 2%;
+    display:-webkit-inline-box;
+    border-radius: 10px;
+    position:relative;
+    left: 48%;
+    bottom: 500px;
+    transition: transform 0.4s ease; /* 👈 agregado */
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* 👈 nuevo */
+}
+
+.bebe{
+    width: 200%;
+    max-width: 400px;
+    height: 200%;
+    padding: 2%;
+    margin: 0px;
+    display:-webkit-inline-box;
+    border-radius: 25px;
+    position:relative;
+    left: 23.4%;
+    top: -240px;
+    transition: transform 0.4s ease; /* 👈 agregado */
+}
+
+.bebe:hover {
+    transform: scale(1.1); /* 👈 nuevo */
+}
+
+.capturando{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 0;
+    line-height: 1.5;
+    padding: 0px;
+    padding-left: 40px; 
+}
+  .momentos{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffd166;
+    text-align: left;
+    margin: 0;
+    line-height: 1;
+    padding: 2px;
+    padding-left: 40px;
+ }
+ .inolvidables{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 0;
+    line-height: 1.6;
+    padding-left: 40px;
+ }
+ .h5{
+     color: rgb(255, 255, 255);
+     justify-content:center;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 2rem;
+     margin: 2%;
+ }
+ .p{
+    color: rgb(255, 255, 255);
+    justify-content:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    margin: 2%;
+    margin-right: 800px;
+    display:grid;
+ }
+.titulo-portafolio {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+    margin: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card-group {
+  display: flex;
+  align-items: stretch;   /* fuerza a que todas las cards tengan la misma altura */
+  gap: 1px;
+  background-color: #1a1d23;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+  background-color: #1a1d23;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden; /* 👈 agregado: contiene el zoom de la imagen */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease; /* 👈 agregado */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); /* 👈 nuevo: se activa al pasar el mouse por toda la card */
+}
+
+.card-body {
+  padding: 3.50rem;
+  flex: 1;   /* el body crece para ocupar el espacio disponible */
+}
+
+.card-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;   /* más interlineado, se lee más cómodo */
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0.50rem;
+  margin-top: auto;
+  padding: 1rem;   /* bajé el padding, ver nota abajo */
+  background-color: #22252b;
+  border-top: 1px solid #333;
+}
+
+.card-footer small {
+  color: #999;
+  font-size: 0.75rem;
+}
+
+.rating {
+  color: #f5a623;
+  white-space: nowrap;
+}
+
+.rating .fa-regular {
+  color: #666;
+}
+
+.servicios-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.titulo-servicios {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.subtitulo-servicios {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  color: #999;
+  margin: 0;
+}
+
+.servicios {
+  padding: 1rem 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.servicios-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.servicio-card {
+  flex: 1 1 0;
+  min-width: 260px;
+  background-color: #1c1f26;
+  border: 1px solid #2a2d35;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.servicio-img {
+  width: calc(100% + 3.5rem); /* compensa el padding lateral (1.75rem x2) */
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: -1.75rem -1.75rem 1.25rem -1.75rem; /* 👈 "cancela" el padding de la card */
+  transition: transform 0.4s ease;
+}
+
+.servicio-card:hover .servicio-img {
+  transform: scale(1.08);
+}
+
+.servicio-icono {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #2a2d35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5a623;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.servicio-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.servicio-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #bbb;
+  margin-bottom: 1.25rem;
+}
+
+.servicio-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+.servicio-lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.servicio-lista i {
+  color: #f5a623;
+  font-size: 0.8rem;
+}
+
+.servicio-link {
+  margin-top: auto;
+  color: #f5a623;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.servicio-link:hover {
+  text-decoration: underline;
+}
+
+.contacto {
+  padding: 3rem 2rem;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1c1f26;
+  border: 1px solid #2a2d35;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.contacto-card:hover {
+  border-color: #f5a623;
+}
+
+.contacto-icono {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.icono-whatsapp { background-color: #1f3d2e; color: #25D366; }
+.icono-instagram { background-color: #3d2233; color: #e4405f; }
+.icono-ubicacion { background-color: #3d3320; color: #f5a623; }
+
+.contacto-texto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contacto-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.contacto-valor {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.contacto-flecha {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.mapa-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a2d35;
+}
+
+.mapa-link {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contacto-form {
+  background-color: #1c1f26;
+  border: 1px solid #2a2d35;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.form-titulo {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.contador {
+  color: #888;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: #12141a;
+  border: 1px solid #2a2d35;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #666;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f5a623;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #f5a623;
+  color: #1a1a1a;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: #d9901c;
+}
+
+.footer {
+  background-color: #1a1d23;
+  color: #888;
+  padding: 2rem;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================
+   RESPONSIVE - Tablet (hasta 992px)
+   ============================================ */
+@media (max-width: 992px) {
+  .capturando,
+  .inolvidables {
+    font-size: 3.5rem;
+  }
+  .momentos {
+    font-size: 2.6rem;
+  }
+  .p {
+    margin-right: 2%;
+  }
+  .servicios-group {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
+/* ============================================
+   RESPONSIVE - Mobile (hasta 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  /* --- Header / Nav --- */
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .logo img {
+    position: static;
+    margin-bottom: 10px;
+  }
+  .fotografia {
+    position: static;
+    font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+    justify-content: center;
+    text-align: center;
+  }
+  .fotografia span {
+    font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+    width: auto;
+  }
+  .nav-links {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    padding: 15px;
+  }
+  .nav-links::after {
+    left: 0;
+  }
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* --- Hero (inicio.html) --- */
+  .herosection,
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+  .capturando,
+  .momentos,
+  .inolvidables {
+    text-align: center;
+    padding-left: 0;
+  }
+  .capturando,
+  .inolvidables {
+    font-size: 2.5rem;
+  }
+  .momentos {
+    font-size: 1.9rem;
+  }
+  .h5 {
+    font-size: 1.2rem;
+  }
+  .p {
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-image,
+  .bebe {
+    position: static;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+  }
+
+  /* --- Portafolio --- */
+.card-group {
+  flex-direction: column;
+}
+.card {
+  flex: 1 1 auto;
+  width: 100%;
+}
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  /* --- Servicios --- */
+  .servicios-group {
+    grid-template-columns: 1fr;
+  }
+  .servicios {
+    padding: 1rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - Mobile chico (hasta 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .capturando,
+  .inolvidables {
+    font-size: 1.9rem;
+  }
+  .momentos {
+    font-size: 1.5rem;
+  }
+  .btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: fit-content;
+  }
+  .titulo-servicios {
+    font-size: 1.8rem;
+  }
+  .titulo-portafolio {
+    font-size: 1.4rem;
+  }
+  .servicio-card {
+    padding: 1.25rem;
+  }
+  .contacto-form {
+    padding: 1.25rem;
+  }
+}
