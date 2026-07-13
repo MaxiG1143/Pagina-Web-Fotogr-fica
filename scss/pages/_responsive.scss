@@ -71,6 +71,8 @@
   /* --- Hero (inicio.html) --- */
   .herosection,
   .hero {
+    display: block;
+    width: 100%;
     text-align: center;
     padding: 20px;
   }

@@ -71,13 +71,23 @@
   flex-wrap: nowrap;
   gap: 0.50rem;
   margin-top: auto;
-  padding: 1rem; // bajé el padding, ver nota abajo
+  padding: 1rem;
   background-color: $color-card-footer-bg;
   border-top: 1px solid $color-border;
 
   small {
     color: $color-blanco;
-    font-size: 1.05rem;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+
+    small {
+      text-align: left;
+    }
   }
 }
 
