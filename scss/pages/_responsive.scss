@@ -1,0 +1,161 @@
+@use "../base/variables" as *;
+
+/* ============================================
+   RESPONSIVE - Tablet (hasta 992px)
+   ============================================ */
+@media (max-width: $bp-tablet) {
+  .capturando,
+  .inolvidables {
+    font-size: 3.5rem;
+  }
+  .momentos {
+    font-size: 2.6rem;
+  }
+  .p {
+    margin-right: 2%;
+  }
+  .servicios-group {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
+/* ============================================
+   RESPONSIVE - Mobile (hasta 768px)
+   ============================================ */
+@media (max-width: $bp-mobile) {
+  /* --- Header / Nav --- */
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    img {
+      position: static;
+      margin-bottom: 10px;
+    }
+  }
+  .fotografia {
+    position: static;
+    font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+    justify-content: center;
+    text-align: center;
+
+    span {
+      font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+      width: auto;
+    }
+  }
+  .nav-links {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    padding: 15px;
+
+    &::after {
+      left: 0;
+    }
+  }
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* --- Hero (inicio.html) --- */
+  .herosection,
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+  .capturando,
+  .momentos,
+  .inolvidables {
+    text-align: center;
+    padding-left: 0;
+  }
+  .capturando,
+  .inolvidables {
+    font-size: 2.5rem;
+  }
+  .momentos {
+    font-size: 1.9rem;
+  }
+  .h5 {
+    font-size: 1.2rem;
+  }
+  .p {
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-image,
+  .bebe {
+    position: static;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+  }
+
+  /* --- Portafolio --- */
+  .card-group {
+    flex-direction: column;
+  }
+  .card {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  /* --- Servicios --- */
+  .servicios-group {
+    grid-template-columns: 1fr;
+  }
+  .servicios {
+    padding: 1rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - Mobile chico (hasta 480px)
+   ============================================ */
+@media (max-width: $bp-mobile-chico) {
+  .capturando,
+  .inolvidables {
+    font-size: 1.9rem;
+  }
+  .momentos {
+    font-size: 1.5rem;
+  }
+  .btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: fit-content;
+  }
+  .titulo-servicios {
+    font-size: 1.8rem;
+  }
+  .titulo-portafolio {
+    font-size: 1.4rem;
+  }
+  .servicio-card {
+    padding: 1.25rem;
+  }
+  .contacto-form {
+    padding: 1.25rem;
+  }
+}

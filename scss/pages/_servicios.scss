@@ -1,0 +1,124 @@
+@use "../base/variables" as *;
+
+.servicios-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.titulo-servicios {
+  font-family: $font-archivo;
+  font-size: 2.5rem;
+  color: $color-blanco;
+  margin-bottom: 0.75rem;
+}
+
+.subtitulo-servicios {
+  font-family: $font-dm-sans;
+  font-size: 1rem;
+  color: $color-texto-gris;
+  margin: 0;
+}
+
+.servicios {
+  padding: 1rem 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.servicios-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.servicio-card {
+  flex: 1 1 0;
+  min-width: 260px;
+  background-color: $color-card-bg-alt;
+  border: 1px solid $color-border-alt;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &:hover .servicio-img {
+    transform: scale(1.08);
+  }
+}
+
+.servicio-img {
+  width: calc(100% + 3.5rem); // compensa el padding lateral (1.75rem x2)
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: -1.75rem -1.75rem 1.25rem -1.75rem; // "cancela" el padding de la card
+  transition: transform 0.4s ease;
+}
+
+.servicio-icono {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $color-border-alt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-dorado;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.servicio-title {
+  font-family: $font-archivo;
+  font-size: 1.1rem;
+  color: $color-blanco;
+  margin-bottom: 0.75rem;
+}
+
+.servicio-text {
+  font-family: $font-dm-sans;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: $color-texto-medio;
+  margin-bottom: 1.25rem;
+}
+
+.servicio-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  font-family: $font-dm-sans;
+  font-size: 0.85rem;
+  color: $color-texto-claro;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  i {
+    color: $color-dorado;
+    font-size: 0.8rem;
+  }
+}
+
+.servicio-link {
+  margin-top: auto;
+  color: $color-dorado;
+  text-decoration: none;
+  font-family: $font-dm-sans;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

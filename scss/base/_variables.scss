@@ -1,0 +1,58 @@
+// ============================================
+// COLORES
+// ============================================
+
+// Fondo general
+$color-bg: #000000;
+
+// Naranjas (marca)
+$color-naranja: #fc6d00;       // botones, logo "LA", barra debajo del nav
+$color-naranja-hover: #fe4c00; // hover de los links del nav
+$color-dorado: #f5a623;        // rating, iconos de servicios, links, focus de inputs
+$color-dorado-hover: #d9901c;  // hover del botón enviar
+$color-amarillo: #ffd166;      // texto "momentos" del hero
+
+// Blancos / grises de texto
+$color-blanco: #ffffff;
+$color-texto-claro: #ddd;
+$color-texto-medio: #bbb;
+$color-texto-gris: #999;
+$color-texto-gris-oscuro: #888;
+$color-texto-tenue: #666;
+
+// Fondos de tarjetas (cards)
+$color-card-bg: #1a1d23;         // card-group, card, footer
+$color-card-bg-alt: #1c1f26;     // servicio-card, contacto-card, contacto-form
+$color-card-footer-bg: #22252b;  // card-footer
+$color-input-bg: #12141a;        // inputs del formulario
+
+// Bordes
+$color-border: #333;
+$color-border-alt: #2a2d35;
+
+// Iconos de contacto
+$color-whatsapp-bg: #1f3d2e;
+$color-whatsapp: #25D366;
+$color-instagram-bg: #3d2233;
+$color-instagram: #e4405f;
+$color-ubicacion-bg: #3d3320;
+
+// Texto oscuro (sobre fondos claros)
+$color-texto-oscuro: #1a1a1a;
+
+// ============================================
+// TIPOGRAFÍAS
+// ============================================
+$font-montserrat: 'Montserrat', sans-serif;
+$font-nav: 'Montserrat', 'Poppins', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+$font-titulos: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+$font-archivo: "Archivo Black", sans-serif;
+$font-dm-sans: "DM Sans", sans-serif;
+
+// ============================================
+// BREAKPOINTS (para usar con mixins más adelante si querés)
+// ============================================
+$bp-tablet: 992px;
+$bp-mobile: 768px;
+$bp-mobile-chico: 480px;

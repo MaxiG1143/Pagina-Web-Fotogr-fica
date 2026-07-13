@@ -1,0 +1,18 @@
+// Base
+@use "base/variables";
+@use "base/base";
+
+// Layout
+@use "layout/nav";
+@use "layout/hero";
+@use "layout/footer";
+
+// Componentes
+@use "components/cards";
+
+// Páginas
+@use "pages/servicios";
+@use "pages/contacto";
+
+// Responsive (siempre al final para que sobreescriba correctamente)
+@use "pages/responsive";
