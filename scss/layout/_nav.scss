@@ -1,0 +1,82 @@
+@use "../base/variables" as *;
+
+li > a.nav-link:hover {
+  color: $color-naranja-hover;
+}
+
+a.btn:hover {
+  background-color: $color-blanco;
+  color: $color-naranja;
+}
+
+.logo img {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  right: 30px;
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.fotografia {
+  font-family: $font-montserrat;
+  font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+  font-weight: 600;
+  font-style: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  left: calc(20px + 50px + 10px); // ajusta el 10px inicial si el logo está más a la izquierda
+  top: 5px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  background: transparent;
+  color: $color-blanco;
+
+  span {
+    font-family: $font-montserrat;
+    font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
+    font-weight: 600;
+    width: 90px;
+    color: $color-naranja; // Color para "LA"
+  }
+}
+
+.nav-links {
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  padding: 30px;
+  margin-left: 30%;
+  position: relative;
+  list-style: none;
+
+  &::after {
+    content: "";
+    // Hacer que la barra ocupe todo el ancho de la página
+    position: absolute;
+    left: -60%;
+    right: 0;
+    top: 100%;
+    height: 4px;
+    background: $color-naranja;
+    pointer-events: none;
+    display: block;
+    border-radius: 0;
+  }
+}
+
+.nav-link {
+  font-family: $font-nav;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: $color-blanco;
+  font-weight: 500;
+  font-size: 1.3em;
+  font-style: inherit;
+  transition: color 0.3s ease;
+  margin-right: 60px;
+}

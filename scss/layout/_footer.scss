@@ -1,0 +1,10 @@
+@use "../base/variables" as *;
+
+.footer {
+  background-color: $color-card-bg;
+  color: $color-texto-gris-oscuro;
+  padding: 2rem;
+  text-align: center;
+  font-family: $font-dm-sans;
+  font-size: 0.85rem;
+}

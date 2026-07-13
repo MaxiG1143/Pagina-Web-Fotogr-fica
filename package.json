@@ -1,13 +1,29 @@
+
 {
   "name": "trabajo-final-fotografia-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiG1143/Pagina-Web-Fotogr-fica.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MaxiG1143/Pagina-Web-Fotogr-fica/issues"
+  },
+  "homepage": "https://github.com/MaxiG1143/Pagina-Web-Fotogr-fica#readme",
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+
+  
 }
+

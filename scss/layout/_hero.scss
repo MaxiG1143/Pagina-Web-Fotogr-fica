@@ -1,0 +1,118 @@
+@use "../base/variables" as *;
+
+.herosection {
+  padding: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  display: inline-block;
+  align-items: flex-start;
+}
+
+.btn {
+  font-family: $font-montserrat;
+  display: ruby-text;
+  background-color: $color-naranja;
+  color: $color-blanco;
+  text-decoration: none;
+  padding: 10px 12px;
+  margin: 10px 0px 0px 20px;
+  border-radius: 10px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  margin: 10px;
+  padding: 2%;
+  display: -webkit-inline-box;
+  border-radius: 10px;
+  position: relative;
+  left: 48%;
+  bottom: 500px;
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.bebe {
+  width: 200%;
+  max-width: 400px;
+  height: 200%;
+  padding: 2%;
+  margin: 0px;
+  display: -webkit-inline-box;
+  border-radius: 25px;
+  position: relative;
+  left: 23.4%;
+  top: -240px;
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.capturando {
+  font-family: $font-titulos;
+  font-size: 5.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color-blanco;
+  text-align: left;
+  margin: 0;
+  line-height: 1.5;
+  padding: 0px;
+  padding-left: 40px;
+}
+
+.momentos {
+  font-family: $font-poppins;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $color-amarillo;
+  text-align: left;
+  margin: 0;
+  line-height: 1;
+  padding: 2px;
+  padding-left: 40px;
+}
+
+.inolvidables {
+  font-family: $font-titulos;
+  font-size: 5.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color-blanco;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6;
+  padding-left: 40px;
+}
+
+.h5 {
+  color: $color-blanco;
+  justify-content: center;
+  font-family: $font-montserrat;
+  font-size: 2rem;
+  margin: 2%;
+}
+
+.p {
+  color: $color-blanco;
+  justify-content: center;
+  font-family: $font-montserrat;
+  font-size: medium;
+  margin: 2%;
+  margin-right: 800px;
+  display: grid;
+}
