@@ -5,14 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicios</title>
+
+  <!-- Hoja de estilos compilada desde Sass (main.scss -> styles.css) -->
   <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Kit de Font Awesome, para los íconos de whatsapp, instagram, ubicación, etc. -->
   <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
   <style>
+
+    /* Importación de fuentes de Google Fonts usadas en todo el sitio */
     @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alien+Block&family=Anton&family=Archivo+Black&family=Bungee&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,10OTH@456;567;678;789;890;999&display=swap");
   </style>
 </head>
 
 <body class="fondo">
+
+  <!-- ===== HEADER / NAVEGACIÓN ===== -->
+  <!-- Igual en las 4 páginas del sitio (Inicio, Portafolio, Servicios, Contacto) -->
   <header>
     <nav>
       <div class="logo">
@@ -29,13 +38,19 @@
       </ul>
     </nav>
   </header>
+
+  <!-- ===== MAIN: SECCIÓN SERVICIOS ===== -->
+  <!-- Muestra 6 tarjetas (cards) con los servicios ofrecidos: foto, descripción, ícono y lista de características -->
   <section class="servicios">
+
+    <!-- Encabezado de la sección -->
     <div class="servicios-header">
       <h2 class="titulo-servicios">Nuestros Servicios</h2>
       <p class="subtitulo-servicios">Servicios profesionales adaptados a cada momento especial de tu vida.</p>
     </div>
     <div class="servicios-group">
 
+      <!-- Servicio 1: Bodas -->
       <div class="servicio-card">
         <img src="../assets/img/uno.jpg" alt="Fotografía de bodas" class="servicio-img" />  
         <div class="servicio-icono"><i class="fa-solid fa-heart"></i></div>
@@ -52,6 +67,7 @@
             class="fa-solid fa-arrow-right"></i></a>
       </div>
 
+      <!-- Servicio 2: Video -->
       <div class="servicio-card">
         <img src="../assets/img/tres.jpg" alt="Video cinematográfico" class="servicio-img" />
         <div class="servicio-icono"><i class="fa-solid fa-video"></i></div>
@@ -68,6 +84,7 @@
             class="fa-solid fa-arrow-right"></i></a>
       </div>
 
+      <!-- Servicio 3: Sesiones personales -->
       <div class="servicio-card">
         <img src="../assets/img/seis.jpg" alt="Sesiones personales" class="servicio-img" />
         <div class="servicio-icono"><i class="fa-solid fa-camera"></i></div>
@@ -84,6 +101,7 @@
             class="fa-solid fa-arrow-right"></i></a>
       </div>
 
+      <!-- Servicio 4: Cumpleaños y eventos -->
       <div class="servicio-card">
         <img src="../assets/img/dos.jpg" alt="Cumpleaños & Eventos" class="servicio-img" />
         <div class="servicio-icono"><i class="fa-solid fa-champagne-glasses"></i></div>
@@ -100,6 +118,7 @@
             class="fa-solid fa-arrow-right"></i></a>
       </div>
 
+      <!-- Servicio 5: Recién Nacidos -->
       <div class="servicio-card">
         <img src="../assets/img/cinco.jpg" alt="Recién Nacidos" class="servicio-img" />
         <div class="servicio-icono"><i class="fa-solid fa-baby"></i></div>
@@ -116,6 +135,7 @@
             class="fa-solid fa-arrow-right"></i></a>
       </div>
 
+      <!-- Servicio 6: Fotolibros & Álbumes -->
       <div class="servicio-card">
         <img src="../assets/img/cuatro.jpg" alt="Fotolibros & Álbumes" class="servicio-img" />
         <div class="servicio-icono"><i class="fa-solid fa-book-open"></i></div>
@@ -134,6 +154,10 @@
 
     </div>
   </section>
+
+  <!-- Más contenido aquí -->
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <p>&copy; 2024 L&A Fotografía. Todos los derechos reservados.</p>
   </footer>

@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+/* ===== FONDOS DE PÁGINA ===== */
+ 
+/* Fondo de la página de Inicio: imagen de fondo fija */
 body.bg {
   width: 100%;
   height: auto;
@@ -14,6 +17,7 @@ body.bg {
   background-repeat: no-repeat;
 }
 
+/* Fondo de Portafolio, Servicios y Contacto: color sólido negro */
 body.fondo {
   width: 100%;
   height: auto;
@@ -22,15 +26,20 @@ body.fondo {
   background-color: #000000;
 }
 
+/* ===== HEADER / NAVEGACIÓN ===== */
+
+/* Color naranja al pasar el mouse por los links del nav */
 li > a.nav-link:hover {
   color: #fe4c00;
 }
 
+/* Botones (CTA) invierten colores al hover */
 a.btn:hover {
   background-color: #ffffff;
   color: #fc6d00;
 }
 
+/* Logo circular, posicionado a la derecha del header */
 .logo img {
   position: absolute;
   width: 70px;
@@ -40,6 +49,8 @@ a.btn:hover {
   margin: 0px;
 }
 
+/* Título "L&A FOTOGRAFIA": tamaño con clamp() para que escale
+   de forma fluida entre mobile y desktop */
 .fotografia {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
@@ -57,6 +68,7 @@ a.btn:hover {
   background: transparent;
   color: #ffffff;
 }
+/* "L&A" en color naranja, distinto al resto del título */
 .fotografia span {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.25rem, 4vw + 0.5rem, 2.5rem);
@@ -65,6 +77,7 @@ a.btn:hover {
   color: #fc6d00;
 }
 
+/* Lista de links del nav en grid horizontal (4 columnas) */
 .nav-links {
   box-sizing: content-box;
   display: grid;
@@ -75,6 +88,7 @@ a.btn:hover {
   position: relative;
   list-style: none;
 }
+/* Línea naranja decorativa debajo del nav */
 .nav-links::after {
   content: "";
   position: absolute;
@@ -100,6 +114,7 @@ a.btn:hover {
   margin-right: 60px;
 }
 
+/* ===== HERO (Inicio) ===== */
 .herosection {
   padding: 30px;
   margin-top: 10px;
@@ -110,6 +125,7 @@ a.btn:hover {
   align-items: flex-start;
 }
 
+/* Botones "Ver Portafolio" / "Reservar Sesión" */
 .btn {
   font-family: "Montserrat", sans-serif;
   display: ruby-text;
@@ -121,6 +137,7 @@ a.btn:hover {
   border-radius: 10px;
 }
 
+/* Imagen principal del hero, con efecto de zoom al hover */
 .hero-image {
   width: 100%;
   max-width: 400px;
@@ -130,7 +147,7 @@ a.btn:hover {
   display: -webkit-inline-box;
   border-radius: 10px;
   position: relative;
-  left: 48%;
+  left: 44%;
   bottom: 500px;
   transition: transform 0.4s ease;
 }
@@ -138,6 +155,7 @@ a.btn:hover {
   transform: scale(1.05);
 }
 
+/* Imagen secundaria (bebé), también con zoom al hover */
 .bebe {
   width: 200%;
   max-width: 400px;
@@ -147,14 +165,15 @@ a.btn:hover {
   display: -webkit-inline-box;
   border-radius: 25px;
   position: relative;
-  left: 23.4%;
-  top: -240px;
+  left: 17%;
+  top: -230px;
   transition: transform 0.4s ease;
 }
 .bebe:hover {
   transform: scale(1.1);
 }
 
+/* Títulos del hero: "CAPTURANDO" / "momentos" / "INOLVIDABLES" */
 .capturando {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 5.2rem;
@@ -197,6 +216,7 @@ a.btn:hover {
   padding-left: 40px;
 }
 
+/* Subtítulo debajo del título principal */
 .h5 {
   color: #ffffff;
   justify-content: center;
@@ -205,6 +225,7 @@ a.btn:hover {
   margin: 2%;
 }
 
+/* Párrafo descriptivo del hero */
 .p {
   color: #ffffff;
   justify-content: center;
@@ -215,6 +236,7 @@ a.btn:hover {
   display: grid;
 }
 
+/* ===== FOOTER (todas las páginas) ===== */
 .footer {
   background-color: #1a1d23;
   color: #888;
@@ -224,6 +246,7 @@ a.btn:hover {
   font-size: 0.85rem;
 }
 
+/* ===== PORTAFOLIO ===== */
 .titulo-portafolio {
   font-family: "Montserrat", sans-serif;
   font-size: 1.75rem;
@@ -235,6 +258,7 @@ a.btn:hover {
   margin: 2.5rem;
 }
 
+/* Contenedor de las 3 cards, en fila */
 .card-group {
   display: flex;
   align-items: stretch;
@@ -243,6 +267,7 @@ a.btn:hover {
   width: 100%;
 }
 
+/* Card individual del portafolio */
 .card {
   display: flex;
   flex-direction: column;
@@ -254,6 +279,7 @@ a.btn:hover {
   border-radius: 5px;
   overflow: hidden;
 }
+/* Efecto zoom en la imagen al pasar el mouse por toda la card */
 .card:hover .card-img-top {
   transform: scale(1.1);
 }
@@ -286,6 +312,7 @@ a.btn:hover {
   color: #ddd;
 }
 
+/* Pie de la card: rating + testimonio, siempre pegado abajo (margin-top: auto) */
 .card-footer {
   display: flex;
   flex-direction: row;
@@ -294,15 +321,27 @@ a.btn:hover {
   flex-wrap: nowrap;
   gap: 0.5rem;
   margin-top: auto;
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: #22252b;
   border-top: 1px solid #333;
 }
 .card-footer small {
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
+}
+/* En mobile chico, el footer de la card pasa a columna */
+@media (max-width: 480px) {
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .card-footer small {
+    text-align: left;
+  }
 }
 
+/* Estrellas del rating: doradas las llenas, grises las vacías */
 .rating {
   color: #f5a623;
   white-space: nowrap;
@@ -310,7 +349,7 @@ a.btn:hover {
 .rating .fa-regular {
   color: #666;
 }
-
+/* ===== SERVICIOS ===== */
 .servicios-header {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -336,7 +375,7 @@ a.btn:hover {
   overflow-x: hidden;
   box-sizing: border-box;
 }
-
+/* Grid de 3 columnas para las 6 cards de servicios */
 .servicios-group {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
@@ -359,6 +398,8 @@ a.btn:hover {
   transform: scale(1.08);
 }
 
+/* Imagen del servicio: se "estira" con margin negativo para
+   ocupar todo el ancho de la card, ignorando el padding del contenedor */
 .servicio-img {
   width: calc(100% + 3.5rem);
   height: 180px;
@@ -368,6 +409,7 @@ a.btn:hover {
   transition: transform 0.4s ease;
 }
 
+/* Círculo con el ícono de cada servicio (corazón, video, cámara, etc.) */
 .servicio-icono {
   width: 48px;
   height: 48px;
@@ -396,6 +438,7 @@ a.btn:hover {
   margin-bottom: 1.25rem;
 }
 
+/* Lista de "incluye" de cada servicio, con checks naranjas */
 .servicio-lista {
   list-style: none;
   padding: 0;
@@ -430,10 +473,12 @@ a.btn:hover {
   text-decoration: underline;
 }
 
+/* ===== CONTACTO ===== */
 .contacto {
   padding: 3rem 2rem;
 }
 
+/* Grid principal: columna de info (más angosta) + columna de formulario (más ancha) */
 .contacto-grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -447,6 +492,7 @@ a.btn:hover {
   gap: 1rem;
 }
 
+/* Tarjeta clickeable de contacto (WhatsApp / Instagram / Ubicación) */
 .contacto-card {
   display: flex;
   align-items: center;
@@ -473,6 +519,7 @@ a.btn:hover {
   font-size: 1.2rem;
 }
 
+/* Colores distintos por tipo de ícono de contacto */
 .icono-whatsapp {
   background-color: #1f3d2e;
   color: #25D366;
@@ -513,6 +560,7 @@ a.btn:hover {
   font-size: 0.9rem;
 }
 
+/* Contenedor del mapa embebido de Google Maps */
 .mapa-wrapper {
   position: relative;
   border-radius: 12px;
@@ -520,6 +568,7 @@ a.btn:hover {
   border: 1px solid #2a2d35;
 }
 
+/* Botón "Abrir en Maps" flotante sobre el mapa */
 .mapa-link {
   position: absolute;
   top: 12px;
@@ -538,6 +587,7 @@ a.btn:hover {
   gap: 0.4rem;
 }
 
+/* Tarjeta contenedora del formulario */
 .contacto-form {
   background-color: #1c1f26;
   border: 1px solid #2a2d35;
@@ -552,6 +602,7 @@ a.btn:hover {
   margin-bottom: 1.5rem;
 }
 
+/* Fila de 2 columnas dentro del form (ej: Nombre + Email) */
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -569,6 +620,7 @@ a.btn:hover {
   color: #ddd;
   margin-bottom: 0.5rem;
 }
+/* Estilos comunes para inputs, selects y textareas del form */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -584,6 +636,7 @@ a.btn:hover {
 .form-group textarea::placeholder {
   color: #666;
 }
+/* Borde naranja al enfocar un campo del formulario */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -594,6 +647,7 @@ a.btn:hover {
   resize: vertical;
 }
 
+/* Contador de caracteres del textarea de mensaje (ej: 120/500) */
 .contador {
   color: #888;
   font-weight: 400;
@@ -616,6 +670,7 @@ a.btn:hover {
   background-color: #d9901c;
 }
 
+/* En pantallas medianas, el form de contacto pasa a 1 sola columna */
 @media (max-width: 900px) {
   .contacto-grid {
     grid-template-columns: 1fr;
@@ -647,6 +702,7 @@ a.btn:hover {
    ============================================ */
 @media (max-width: 768px) {
   /* --- Header / Nav --- */
+  /* El nav pasa de horizontal a columna, centrado */
   header nav {
     display: flex;
     flex-direction: column;
@@ -688,8 +744,12 @@ a.btn:hover {
     text-align: center;
   }
   /* --- Hero (inicio.html) --- */
+    /* En mobile, el hero se centra y las imágenes vuelven al flujo normal
+     (dejan de estar posicionadas de forma absoluta/relativa fija) */
   .herosection,
   .hero {
+    display: block;
+    width: 100%;
     text-align: center;
     padding: 20px;
   }
@@ -727,6 +787,7 @@ a.btn:hover {
     display: block;
   }
   /* --- Portafolio --- */
+  /* Las cards pasan de fila a columna, una debajo de otra */
   .card-group {
     flex-direction: column;
   }
@@ -738,6 +799,7 @@ a.btn:hover {
     padding: 1.5rem;
   }
   /* --- Servicios --- */
+  /* El grid de 3 columnas pasa a 1 sola columna */
   .servicios-group {
     grid-template-columns: 1fr;
   }

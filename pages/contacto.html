@@ -5,14 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto</title>
+
+  <!-- Hoja de estilos compilada desde Sass (main.scss -> styles.css) -->
   <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Kit de Font Awesome, para los íconos de whatsapp, instagram, ubicación, etc. -->
   <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
   <style>
+
+  /* Importación de fuentes de Google Fonts usadas en todo el sitio */
     @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alien+Block&family=Anton&family=Archivo+Black&family=Bungee&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,10OTH@456;567;678;789;890;999&display=swap");
   </style>
 </head>
 
 <body class="fondo">
+  <!-- ===== HEADER / NAVEGACIÓN ===== -->
+  <!-- Igual en las 4 páginas del sitio (Inicio, Portafolio, Servicios, Contacto) -->  
   <header>
     <nav>
       <div class="logo">
@@ -29,10 +37,15 @@
       </ul>
     </nav>
   </header>
+
+  <!-- ===== SECCIÓN CONTACTO ===== -->
+  <!-- Grid de 2 columnas: info de contacto (izq) + formulario (der) -->
   <section class="contacto">
     <div class="contacto-grid">
 
+      <!-- --- Columna izquierda: datos de contacto rápido --- -->
       <div class="contacto-info">
+        <!-- Tarjeta de contacto por WhatsApp -->
         <a href="https://wa.me/5491167693654" target="_blank" class="contacto-card">
           <div class="contacto-icono icono-whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
           <div class="contacto-texto">
@@ -42,6 +55,7 @@
           <i class="fa-solid fa-arrow-right contacto-flecha"></i>
         </a>
 
+        <!-- Tarjeta de contacto por Instagram -->
         <a href="https://instagram.com/leo.adrifotografia" target="_blank" class="contacto-card">
           <div class="contacto-icono icono-instagram"><i class="fa-brands fa-instagram"></i></div>
           <div class="contacto-texto">
@@ -51,6 +65,7 @@
           <i class="fa-solid fa-arrow-right contacto-flecha"></i>
         </a>
 
+        <!-- Tarjeta de contacto por Ubicación -->
         <a href="https://maps.google.com" target="_blank" class="contacto-card">
           <div class="contacto-icono icono-ubicacion"><i class="fa-solid fa-location-dot"></i></div>
           <div class="contacto-texto">
@@ -60,6 +75,7 @@
           <i class="fa-solid fa-arrow-right contacto-flecha"></i>
         </a>
 
+        <!-- Mapa embebido de Google Maps con link para abrirlo en una pestaña nueva -->
         <div class="mapa-wrapper">
           <a href="https://maps.google.com" target="_blank" class="mapa-link">Abrir en Maps <i
               class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -69,6 +85,7 @@
         </div>
       </div>
 
+      <!-- --- Columna derecha: formulario de contacto --- -->
       <form class="contacto-form" id="form-contacto">
         <h2 class="form-titulo">Envianos un mensaje</h2>
 
@@ -90,6 +107,8 @@
           </div>
           <div class="form-group">
             <label for="servicio">Tipo de Servicio *</label>
+
+            <!-- Select con las opciones de servicios que ofrece el estudio -->
             <select id="servicio" name="servicio" required>
               <option value="" selected disabled>Seleccioná un servicio</option>
               <option value="Fotografía de Bodas">Fotografía de Bodas</option>
@@ -108,6 +127,8 @@
         </div>
 
         <div class="form-group">
+
+          <!-- Contador de caracteres en vivo para el textarea (máx. 500) -->
           <label for="mensaje">Mensaje * <span class="contador">(<span
                 id="contador-caracteres">0</span>/500)</span></label>
           <textarea id="mensaje" name="mensaje" maxlength="500" rows="5"
@@ -120,10 +141,15 @@
 
     </div>
   </section>
+
+  <!-- ===== SCRIPT DEL FORMULARIO ===== -->
+  <!-- Al enviar el form, arma un mensaje pre-cargado y abre WhatsApp Web/App
+       con los datos del cliente, en vez de mandar el form a un servidor -->
   <script>
     document.getElementById('form-contacto').addEventListener('submit', function (e) {
       e.preventDefault();
 
+      // Tomamos los valores de cada campo del formulario
       const nombre = document.getElementById('nombre').value;
       const email = document.getElementById('email').value;
       const telefono = document.getElementById('telefono').value;
@@ -131,6 +157,7 @@
       const fecha = document.getElementById('fecha').value;
       const mensaje = document.getElementById('mensaje').value;
 
+      // Armamos el texto del mensaje de WhatsApp, agregando saltos de línea (%0A)
       let texto = `Hola! Quiero consultar por una sesión de fotos.%0A%0A`;
       texto += `*Nombre:* ${nombre}%0A`;
       texto += `*Email:* ${email}%0A`;
@@ -139,12 +166,16 @@
       if (fecha) texto += `*Fecha del evento:* ${fecha}%0A`;
       texto += `*Mensaje:* ${mensaje}`;
 
+      // Número de WhatsApp del estudio y armado del link de wa.me
       const numeroWhatsapp = '5491167693654';
       const url = `https://wa.me/${numeroWhatsapp}?text=${texto}`;
 
+      // Abre WhatsApp en una pestaña nueva con el mensaje ya redactado
       window.open(url, '_blank');
     });
   </script>
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
     <p>&copy; 2024 L&A Fotografía. Todos los derechos reservados.</p>
   </footer>

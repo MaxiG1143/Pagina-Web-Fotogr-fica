@@ -5,14 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio</title>
+
+  <!-- Hoja de estilos compilada desde Sass (main.scss -> styles.css) -->
   <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Kit de Font Awesome, para los íconos de whatsapp, instagram, ubicación, etc. -->
   <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
   <style>
+
+    /* Importación de fuentes de Google Fonts usadas en todo el sitio */
     @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alien+Block&family=Anton&family=Archivo+Black&family=Bungee&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
   </style>
 </head>
 
 <body class="fondo">
+
+  <!-- ===== HEADER / NAVEGACIÓN ===== -->
+  <!-- Igual en las 4 páginas del sitio (Inicio, Portafolio, Servicios, Contacto) -->
   <header>
     <nav>
       <div class="logo">
@@ -30,10 +39,15 @@
     </nav>
   </header>
 
+  <!-- ===== MAIN: GALERÍA DE PORTAFOLIO ===== -->
+  <!-- Muestra 3 tarjetas (cards) con trabajos realizados: foto, descripción,
+       puntaje en estrellas y una cita/testimonio del cliente -->
   <main>
     <section class="p-3 m-0 border-0 bd-example">
       <h2 class="titulo-portafolio">Portafolio</h2>
       <div class="card-group">
+
+        <!-- Card 1: sesión de pareja -->
         <div class="card">
             <img src="../assets/img/eugenia.jpg" alt="Eugenia" class="card-img-top" />
             <div class="card-body">
@@ -42,6 +56,8 @@
                 naturaleza. Ideal para preboda o aniversarios.</p>
             </div>
             <div class="card-footer">
+
+              <!-- Rating de 5 estrellas: fa-solid = llena, fa-regular = vacía -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -53,6 +69,7 @@
             </div>
           </div>
 
+          <!-- Card 2: sesión familiar -->
           <div class="card">
             <img src="../assets/img/tomas.jpg" alt="Tomas" class="card-img-top" />
             <div class="card-body">
@@ -61,6 +78,8 @@
                 miembro de la familia.</p>
             </div>
             <div class="card-footer">
+
+              <!-- Rating de 5 estrellas: fa-solid = llena, fa-regular = vacía -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -72,6 +91,7 @@
             </div>
           </div>
 
+          <!-- Card 3: sesión individual/retrato -->
           <div class="card">
             <img src="../assets/img/mariela.jpg" alt="Mariela" class="card-img-top" />
             <div class="card-body">
@@ -80,6 +100,8 @@
                 personalidad frente a cámara.</p>
             </div>
             <div class="card-footer">
+
+              <!-- Rating de 5 estrellas: fa-solid = llena, fa-regular = vacía -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -93,7 +115,10 @@
         </div>
     </section>
   </main>
+
   <!-- Más contenido aquí -->
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <p>&copy; 2024 L&A Fotografía. Todos los derechos reservados.</p>
   </footer>
